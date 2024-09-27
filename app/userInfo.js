@@ -5,7 +5,7 @@ export default function UserInfoForm({ onSubmit }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [rollNo, setRollNo] = useState("");
-
+// for name email and roll no
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit({ name, email, rollNo });
@@ -15,6 +15,7 @@ export default function UserInfoForm({ onSubmit }) {
     <div className="bg-white p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">User Info</h2>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+    // NAME
         <input
           type="text"
           placeholder="Name"
@@ -23,6 +24,7 @@ export default function UserInfoForm({ onSubmit }) {
           required
           className="border rounded-lg p-2"
         />
+            // EMAIL
         <input
           type="email"
           placeholder="Email"
@@ -31,6 +33,7 @@ export default function UserInfoForm({ onSubmit }) {
           required
           className="border rounded-lg p-2"
         />
+            // ROLLNO
         <input
           type="text"
           placeholder="Roll No"
