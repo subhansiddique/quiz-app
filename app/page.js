@@ -134,6 +134,7 @@ export default function Quiz() {
               </button>
             ))}
           </div>
+            // button start
           <button
             onClick={handleNextQuestion}
             disabled={!selectedOption}
